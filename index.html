@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>紹介状3秒サマリーAI</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <h1>紹介状を探す時間を、3秒の理解へ。</h1>
-      <p>
-        ローカルAIで紹介状を検索し、
-        必要な内容だけを瞬時に要約します。
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">紹介状3秒サマリーAI</div>
+      <a href="#demo" class="nav-cta">試作品を見る</a>
+    </nav>
+
+    <section class="hero-content">
+      <p class="badge">小規模クリニック向け・ローカルAI</p>
+      <h1>紹介状を探す時間を、<br>3秒の理解へ。</h1>
+      <p class="lead">
+        過去の紹介状・退院サマリー・検査結果を検索すると、
+        AIが必要な内容だけを瞬時に要約。
+        診察中にPDFを開いて読み込む時間を減らします。
       </p>
-      <a href="#contact" class="button">試作品を見てみる</a>
+      <div class="hero-buttons">
+        <a href="#demo" class="primary-button">無料デモを見てみる</a>
+        <a href="#problem" class="secondary-button">詳しく見る</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="problem" class="section">
+      <p class="section-label">Problem</p>
+      <h2>診察中、紹介状を探して読む時間が負担になっていませんか？</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>PDFを探す</h3>
+          <p>患者名・病院名・日付で探すが、ファイル名が統一されておらず時間がかかる。</p>
+        </div>
+        <div class="card">
+          <h3>全文を読む</h3>
+          <p>紹介状を見つけても、必要な情報を探すために全文を読み直す必要がある。</p>
+        </div>
+        <div class="card">
+          <h3>患者を待たせる</h3>
+          <p>診察中に確認が必要になり、患者さんを待たせてしまう。</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>こんな場面で困っていませんか？</h2>
-      <p>診察中に過去の紹介状を探す。PDFを開く。全文を読む。</p>
-      <p>その間、患者さんを待たせてしまう。</p>
+    <section class="section highlight">
+      <p class="section-label">Solution</p>
+      <h2>検索すると、AIが要点だけを表示します。</h2>
+      <div class="demo-box">
+        <div class="search-bar">山田太郎　胃カメラ　○○病院</div>
+        <div class="summary-card">
+          <p><strong>患者名：</strong>山田太郎</p>
+          <p><strong>紹介元：</strong>○○病院 消化器内科</p>
+          <p><strong>日付：</strong>2026/07/03</p>
+          <p><strong>要約：</strong>胃潰瘍フォロー目的。胃カメラ施行後、PPI継続。半年後再診予定。</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>紹介状3秒サマリーAIでできること</h2>
-      <ul>
-        <li>患者名・病院名・日付で検索</li>
-        <li>紹介状の内容をAIが要約</li>
-        <li>PDFを開かずに概要を確認</li>
-        <li>院内ローカル環境で個人情報を外に出さない</li>
+    <section class="section">
+      <p class="section-label">Features</p>
+      <h2>まずは「紹介状を理解する」ことに集中します。</h2>
+      <ul class="feature-list">
+        <li>患者名・病院名・病名・検査名で検索</li>
+        <li>PDFを開かずにAI要約を表示</li>
+        <li>ファイル名も自動提案</li>
+        <li>ローカルAIで個人情報を外に出さない設計</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>まずは試作品を見てください</h2>
-      <p>医療事務・院長向けに無料モニターを募集しています。</p>
-      <button onclick="showMessage()">問い合わせる</button>
-      <p id="message"></p>
+    <section id="demo" class="section cta-section">
+      <h2>試作品を見て、感想をください。</h2>
+      <p>
+        現在、小規模クリニックの院長・医療事務スタッフ向けに
+        無料モニターを募集しています。
+      </p>
+      <button id="demoButton" class="primary-button">無料デモに興味があります</button>
+      <p id="message" class="message"></p>
     </section>
   </main>
+
+  <footer>
+    <p>© 2026 紹介状3秒サマリーAI</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
