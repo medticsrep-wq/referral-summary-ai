@@ -2,10 +2,45 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>紹介状3秒サマリーAI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>紹介状を探す時間を、3秒の理解へ。</h1>
-  <p>ローカルAIで紹介状を検索し、必要な内容だけを要約します。</p>
+  <main>
+    <section class="hero">
+      <h1>紹介状を探す時間を、3秒の理解へ。</h1>
+      <p>
+        ローカルAIで紹介状を検索し、
+        必要な内容だけを瞬時に要約します。
+      </p>
+      <a href="#contact" class="button">試作品を見てみる</a>
+    </section>
+
+    <section>
+      <h2>こんな場面で困っていませんか？</h2>
+      <p>診察中に過去の紹介状を探す。PDFを開く。全文を読む。</p>
+      <p>その間、患者さんを待たせてしまう。</p>
+    </section>
+
+    <section>
+      <h2>紹介状3秒サマリーAIでできること</h2>
+      <ul>
+        <li>患者名・病院名・日付で検索</li>
+        <li>紹介状の内容をAIが要約</li>
+        <li>PDFを開かずに概要を確認</li>
+        <li>院内ローカル環境で個人情報を外に出さない</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>まずは試作品を見てください</h2>
+      <p>医療事務・院長向けに無料モニターを募集しています。</p>
+      <button onclick="showMessage()">問い合わせる</button>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
